@@ -1,0 +1,40 @@
+name: ml_env
+channels:
+  - conda-forge
+  - apple
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - seaborn
+  - jupyterlab
+  - ipykernel
+  - scikit-learn
+  - scikit-image
+  - pillow
+  - tqdm
+  - h5py
+  - protobuf
+  - opencv
+  - libopus
+  
+  # PyTorch for M1/M2 Macs
+  - pytorch::pytorch
+  - pytorch::torchvision
+  - pytorch::torchaudio
+  
+  # TensorFlow for M1/M2 Macs
+  - tensorflow-deps
+  - pip:
+      - tensorflow-macos
+      - tensorflow-metal
+      - opencv-python
+      - albumentations
+      - imageio
+      - opendatasets
+      - pycocotools
